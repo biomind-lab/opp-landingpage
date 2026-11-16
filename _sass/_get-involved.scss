@@ -183,6 +183,12 @@ $gi-text-soft: #4a4060;          // secondary copy tone already used on subpages
     .btn--primary { padding: 1rem 1.875rem; font-size: 1.03rem; }
   }
 
+  .gi-register-deadline {
+    margin: 0.25rem 0 0;
+    font-weight: 700;
+    color: $plum;
+  }
+
   // White card with two internal columns
   .gi-register-card {
     background: $white;
@@ -291,6 +297,13 @@ $gi-text-soft: #4a4060;          // secondary copy tone already used on subpages
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: $muted;
+    }
+    .gi-tl-note {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.875rem;
+      line-height: 1.4;
+      color: $plum;
     }
   }
 

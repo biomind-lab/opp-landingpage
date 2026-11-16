@@ -38,8 +38,8 @@ pitch:
 ask:
   paragraphs:
     # DRAFT — needs review (feedback doc copy not available at time of writing)
-    - "We're looking for people with lived experience of mental illness, and people who care for them, to help shape what we build and how we build it."
-    - "We are looking at recruiting 12–16 people with lived experience across our workshop series, including a core group of 3–4 who will stay involved throughout."
+    - "We're looking for people with lived experience of mental health challenges, and people who care for them, to help shape what we build and how we build it."
+    - "We are looking at recruiting 12–16 people with lived experience across our workshop series, including a core group of 2 who will stay involved throughout."
     # DRAFT — needs review
     - "There are three tasks to choose from, running one after another between %%first%% and %%last%%. You can join one or all of them."
   jump_label: "See the three tasks &darr;"
@@ -50,6 +50,8 @@ register:
   intro: "A short form hosted by the University of Cambridge. It takes about 5 minutes, and registering interest is not signing up &mdash; it just lets us get in touch."
   cta_label: "Open the form &rarr;"
   cta_note: "Opens in a new tab"
+  # Shown under the button. Leave empty ("") to hide.
+  deadline: "Please register by the 8th of January."
 
 tasks:
   heading: "The tasks"
@@ -58,7 +60,7 @@ tasks:
   eyebrow_prefix: "Project"
   task_label: "What you will do"
   # Merges the feedback's sentence with the time-commitment detail from the FAQ
-  workshops_note: "The workshops will be very hands-on. Each task takes the form of a half-day workshop with 2–3 follow-up meetings, and most sessions will be held online. Never at any time will you be expected to share your own life history &mdash; you engage in a way that is comfortable for you."
+  workshops_note: "The workshops will be very hands-on. You don't need any special knowledge about science, medical records or AI to take part. Each task takes the form of a half-day workshop with 2–3 follow-up meetings, and most sessions will be held online. Never at any time will you be expected to share your own life history &mdash; you engage in a way that is comfortable for you."
 
 faqs:
   heading: "FAQs"

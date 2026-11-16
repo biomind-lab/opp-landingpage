@@ -41,7 +41,7 @@ This is a Jekyll static site with **no theme** — all layouts and styles are bu
 | Glossary term list | `_data/glossary.yml` |
 | Get Involved FAQ questions/answers (flat list of five) | `_data/faqs.yml` |
 | FAQ "what would I do" project breakdown (only the PWLE column renders) | `_data/faq_projects.yml` |
-| Parked FAQs for the unbuilt `/good-experience/` page | `_data/good_experience_faqs.yml` |
+| Good Experience page copy (`/good-experience/`: header, jump bar, three question groups, next steps) | `_data/good_experience.yml` |
 | Industry page copy | `_data/industry.yml` |
 | Find Out More page copy | `_data/findout_more.yml` |
 | Thank-you page copy | `_data/thank_you.yml` |
@@ -55,7 +55,7 @@ Layout HTML lives in `_layouts/default.html` and `_includes/`. The SCSS lives in
 
 ### Register interest (external Qualtrics form)
 
-The interest form is hosted externally on Qualtrics — this site doesn't own or style its questions. `_data/site.yml`'s `qualtrics_form_url` is the single source of truth for the URL. There is exactly **one** recruitment route and no other register prompts anywhere on the site: nav item "For patients, carers and public" (`muted: true` in `nav.yml`, rendered grey via `.nav-link--muted`) → `/get-involved/` (`get-involved.html`: two-column hero, recruitment ask, an inline "Register your interest" section listing what the form asks from `get_involved.yml › preview`, a task timeline from `projects.yml` with a scroll-in reveal in `assets/js/gi-timeline.js`, and a five-item FAQ accordion from `faqs.yml` + `faq_projects.yml`) → green "Open the form" button → Qualtrics in a new tab. `/faqs/` redirects to `/get-involved/`. The `/good-experience/` page linked from the get-involved page does not exist yet; its parked FAQ content is in `_data/good_experience_faqs.yml`. The industry page keeps its own booking modal (`_includes/booking-modal.html`).
+The interest form is hosted externally on Qualtrics — this site doesn't own or style its questions. `_data/site.yml`'s `qualtrics_form_url` is the single source of truth for the URL. There is exactly **one** recruitment route and no other register prompts anywhere on the site: nav item "For patients, carers and public" (`muted: true` in `nav.yml`, rendered grey via `.nav-link--muted`) → `/get-involved/` (`get-involved.html`: two-column hero, recruitment ask, an inline "Register your interest" section listing what the form asks from `get_involved.yml › preview`, a task timeline from `projects.yml` with a scroll-in reveal in `assets/js/gi-timeline.js`, and a five-item FAQ accordion from `faqs.yml` + `faq_projects.yml`) → green "Open the form" button → Qualtrics in a new tab. `/faqs/` redirects to `/get-involved/`. The get-involved page links to its child page `/good-experience/` (`good-experience.html`, styles in `_sass/_good-experience.scss`): six always-open Q&As in three groups, no accordion, no JS and no green button — it ends with a text link back to `/get-involved/#gi-register`. It is not in `nav.yml`; `_includes/nav.html` marks the get-involved nav item active on it with `aria-current="true"`. The industry page keeps its own booking modal (`_includes/booking-modal.html`).
 
 ### Diagonal section dividers
 

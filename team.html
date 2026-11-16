@@ -47,7 +47,7 @@ description: "The team behind the Open Psychiatry Project."
           <div class="team-card-text">
             <h3>{{ person.name }}</h3>
             <span class="team-role-label">{{ person.title }}</span>
-            <p class="team-role">{{ person.role }}</p>
+            {% if person.role and person.role != "" %}<p class="team-role">{{ person.role }}</p>{% endif %}
           </div>
         </article>
         {% endfor %}

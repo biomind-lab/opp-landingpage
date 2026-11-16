@@ -2,7 +2,7 @@
 {% if page.url == '/team/' %}{% assign is_team = true %}{% endif %}
 
 {% assign is_get_involved = false %}
-{% if page.url == '/get-involved/' %}{% assign is_get_involved = true %}{% endif %}
+{% if page.url == '/get-involved/' or page.url == '/good-experience/' %}{% assign is_get_involved = true %}{% endif %}
 
 {% assign is_glossary = false %}
 {% if page.url == '/glossary/' %}{% assign is_glossary = true %}{% endif %}
@@ -62,7 +62,7 @@
         {%- assign link_classes = '' -%}
         {%- if link.muted %}{% assign link_classes = 'nav-link--muted' %}{% endif -%}
         {%- if link_active %}{% assign link_classes = link_classes | append: ' is-active' | strip %}{% endif %}
-        <li><a href="{{ link.url | relative_url }}"{% if link_classes != '' %} class="{{ link_classes }}"{% endif %}{% if link_active %} aria-current="page"{% endif %}>{{ link.label }}</a></li>
+        <li><a href="{{ link.url | relative_url }}"{% if link_classes != '' %} class="{{ link_classes }}"{% endif %}{% if link_active %} aria-current="{% if page.url == link.url %}page{% else %}true{% endif %}"{% endif %}>{{ link.label }}</a></li>
         {% endfor %}
       </ul>
       </div>

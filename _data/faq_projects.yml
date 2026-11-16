@@ -41,14 +41,14 @@
   aim: >
     Hospital and GP health records are packed with rich, hidden clues about mental health, but the
     data is messy and disorganized. Instead of trying to clean everything, we want to focus our
-    engineering efforts on cleaning the measurements that matter most to real people and real
+    software engineering efforts on cleaning the measurements that matter most to real people and real
     clinical outcomes.
   why_it_matters:
     pwle_label: "For patients & carers"
     pwle_text: >
       It ensures the resource tracks symptoms and life events that deeply impact day-to-day
-      quality of life (like sleep disruption or emergency admissions), not just standard blood
-      counts.
+      quality of life (like sleep disruption or emergency admissions), not just standard
+      hospital tests or diagnoses that healthcare professionals have recorded.
     clinician_label: "For Health professionals & researchers"
     clinician_text: >
       We will build a clean, standardised blueprint for extracting high-value data patterns from
@@ -58,7 +58,7 @@
   years: "2029"
   aim: >
     Traditionally, professional scientists choose the research questions. In this project, we are
-    flipping the script. A group led by people with lived experience will completely design
+    flipping the script. A group led by people with lived experience will design
     and run custom data analyses across multiple secure UK databases using the Open
     Psychiatry federated data platform.
   why_it_matters:

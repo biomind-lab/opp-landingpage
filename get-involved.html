@@ -2,7 +2,7 @@
 layout: default
 title: For patients, carers and public
 permalink: /get-involved/
-description: "How people with lived experience of mental illness, and those who care for them, can help co-produce the Open Psychiatry Project (OPP)."
+description: "How people with lived experience of mental health challenges, and those who care for them, can help co-produce the Open Psychiatry Project (OPP)."
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════
@@ -67,6 +67,7 @@ description: "How people with lived experience of mental illness, and those who 
       <div class="gi-register-cta">
         <a href="{{ site.data.site.qualtrics_form_url }}" class="btn btn--primary" target="_blank" rel="noopener">{{ gi.register.cta_label }}</a>
         <span class="btn-note">{{ gi.register.cta_note }}</span>
+        {% if gi.register.deadline %}<p class="gi-register-deadline">{{ gi.register.deadline }}</p>{% endif %}
       </div>
     </div>
     <div class="gi-register-card">
@@ -103,6 +104,7 @@ description: "How people with lived experience of mental illness, and those who 
         <div class="gi-tl-date" data-anim>
           <span class="gi-tl-years">{{ project.years }}</span>
           <span class="gi-tl-project">{{ gi.tasks.eyebrow_prefix }} {{ forloop.index }}</span>
+          {% if project.note %}<span class="gi-tl-note">{{ project.note }}</span>{% endif %}
         </div>
         <div class="gi-tl-spine" aria-hidden="true">
           <span class="gi-tl-line" data-anim></span>

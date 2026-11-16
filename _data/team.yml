@@ -60,15 +60,16 @@ coproduction:
   heading: "Co-production team"
   subheading: "People with lived experience"
   paragraphs:
-    - "People with lived experience of mental illness sit in the core team, shaping the questions OPP asks, how data is governed, and how findings are shared."
-    - "We aim to bring together 12–16 people with lived experience across our workshop series, including a core group of 3–4 who will stay involved throughout."
-  # Placeholder slots until the core group is recruited. Replace each
-  # with a real person (same shape as research.people, add `photo:`).
+    - "People with lived experience of mental health challenges sit in the core team, shaping the questions OPP asks, how data is governed, and how findings are shared."
+    - "We aim to bring together 12–16 people with lived experience across our workshop series, including a core group of 2 who will stay involved throughout."
+  # The "Core member" entries are placeholder slots until the core
+  # group is recruited. Replace each with a real person (same shape as
+  # research.people, add `photo:`).
   people:
-    - name: Core member
-      title: Lived experience
-      role: Joins throughout the workshop series
-      photo: ""
+    - name: Naomi Clements-Brod
+      title: Patient and Public Involvement Research Lead
+      role: ""
+      photo: naomi-clements-brod.jpg
 
     - name: Core member
       title: Lived experience
@@ -78,9 +79,4 @@ coproduction:
     - name: Core member
       title: Lived experience
       role: Joins throughout the workshop series
-      photo: ""
-
-    - name: PWLE facilitator
-      title: Facilitator
-      role: Named contact for the co-production group
       photo: ""

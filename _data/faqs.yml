@@ -15,8 +15,10 @@
 # breakdown from _data/faq_projects.yml (edit that file to change
 # those details).
 #
-# Questions parked for a future /good-experience/ page live in
-# _data/good_experience_faqs.yml and are not rendered anywhere yet.
+# The safety, conduct, impact and data questions live on the
+# /good-experience/ page — see _data/good_experience.yml. "How will I
+# know what difference my input made?" appears on both pages; keep the
+# two answers in step.
 # ===================================================================
 
 - question: "Why are we doing this co-production?"
