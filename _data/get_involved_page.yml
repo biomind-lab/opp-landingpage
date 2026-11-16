@@ -54,7 +54,7 @@ register:
   deadline: "Please register by the 8th of January."
 
 tasks:
-  heading: "The tasks"
+  heading: "The Timeline"
   # DRAFT — needs review
   intro: "Three projects, one after another across the life of the award, from %%first%% to %%last%%. Each one needs people with lived experience at the table."
   eyebrow_prefix: "Project"
