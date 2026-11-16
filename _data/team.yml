@@ -1,8 +1,9 @@
 # ===================================================================
-# Team members, in display order, in two named groups rendered by one
+# Team members, in display order, in three named groups rendered by one
 # Liquid loop in team.html:
 #
-#   research      — the research team (university / partner leads)
+#   leadership    — the leadership team (university / partner leads)
+#   research      — the research team and software developers
 #   coproduction  — the co-production team (people with lived experience)
 #
 # Each group has a `heading`, optional `intro`/`subheading`/`paragraphs`
@@ -14,11 +15,11 @@
 # If a group's `people` list is empty, the page renders four empty
 # placeholder cards so the section still reads as a grid. Add the
 # co-production core group under `coproduction.people` once recruited,
-# using the same shape as `research.people`.
+# using the same shape as `leadership.people`.
 # ===================================================================
 
-research:
-  heading: "Research team"
+leadership:
+  heading: "Leadership team"
   intro: ""
   people:
     - name: Mary-Ellen Lynall
@@ -56,15 +57,22 @@ research:
       role: University of Cambridge, Department of Psychiatry
       photo: birgitta-olofsson.jpeg
 
+research:
+  heading: "Research team and software developers"
+  intro: ""
+  # No one listed yet — the page shows four empty placeholder cards
+  # until people are added here (same shape as leadership.people).
+  people: []
+
 coproduction:
   heading: "Co-production team"
   subheading: "People with lived experience"
   paragraphs:
     - "People with lived experience of mental health challenges sit in the core team, shaping the questions OPP asks, how data is governed, and how findings are shared."
-    - "We aim to bring together 12–16 people with lived experience across our workshop series, including a core group of 2 who will stay involved throughout."
+    - "We aim to bring together 12–16 people with lived experience across our workshop series, to complement the core group who will stay involved throughout."
   # The "Core member" entries are placeholder slots until the core
   # group is recruited. Replace each with a real person (same shape as
-  # research.people, add `photo:`).
+  # leadership.people, add `photo:`).
   people:
     - name: Naomi Clements-Brod
       title: Patient and Public Involvement Research Lead

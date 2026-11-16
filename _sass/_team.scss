@@ -1,7 +1,7 @@
 // ===================================================================
 // TEAM PAGE
-// team.html only. Two sibling `.team-group` sections (research, then
-// co-production) with alternating backgrounds; each holds a heading,
+// team.html only. Three sibling `.team-group` sections (leadership, research,
+// then co-production) with alternating backgrounds; each holds a heading,
 // optional copy, and a fluid auto-fit grid of cards. A group with no
 // people renders empty placeholder cards. No breakpoints needed.
 // ===================================================================
@@ -47,11 +47,12 @@
   }
 }
 
-.team-group--research {
+.team-group--leadership,
+.team-group--coproduction {
   background: $off-white;
 }
 
-.team-group--coproduction {
+.team-group--research {
   background: $white;
 }
 

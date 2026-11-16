@@ -17,14 +17,14 @@ description: "The team behind the Open Psychiatry Project."
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     TEAM — GROUPS (research, then co-production)
+     TEAM — GROUPS (leadership, research, then co-production)
      Edit: headings, copy and people in _data/team.yml — one section
-     per group, rendered by the single loop below so the two cannot
+     per group, rendered by the single loop below so they cannot
      drift apart. A group with no people renders four empty
      placeholder cards. The "portrait needed" label lives in
      _data/team_page.yml (placeholder_label:). No CTA on this page.
      ═══════════════════════════════════════════════════════════════ -->
-{% assign groups = "research,coproduction" | split: "," %}
+{% assign groups = "leadership,research,coproduction" | split: "," %}
 {% for key in groups %}
 {% assign group = site.data.team[key] %}
 <section class="team-group team-group--{{ key }}" aria-labelledby="team-{{ key }}-heading">

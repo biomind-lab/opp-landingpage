@@ -181,7 +181,10 @@ description: "How people with lived experience of mental health challenges, and 
 <section class="gi-contact" id="gi-contact">
   <div class="container">
     <div class="gi-contact-inner">
-      <p>{{ gi.contact.good_experience_text_before_link }} <a href="{{ '/good-experience/' | relative_url }}">{{ gi.contact.good_experience_link_text }}</a></p>
+      <div class="gi-more">
+        <p>{{ gi.contact.good_experience_text_before_link }}</p>
+        <a class="btn btn--outline" href="{{ '/good-experience/' | relative_url }}">{{ gi.contact.good_experience_link_text }}</a>
+      </div>
       <p>{{ gi.contact.email_text_before_link }} <a href="mailto:{{ site.data.site.contact_email }}">{{ site.data.site.contact_email }}</a>.</p>
     </div>
   </div>

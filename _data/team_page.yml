@@ -1,7 +1,7 @@
 # ===================================================================
 # Team page (team.html) copy — NOT the member list.
 # Member list and per-group headings/copy live in _data/team.yml
-# (two named groups, `research` and `coproduction`).
+# (three named groups: `leadership`, `research`, `coproduction`).
 # ===================================================================
 
 intro:

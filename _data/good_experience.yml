@@ -8,7 +8,7 @@
 # always read the same. The contact email is _data/site.yml:
 # contact_email.
 #
-# groups: each one becomes a numbered section (01, 02, 03 — numbered
+# groups: each one becomes a numbered section (01, 02 — numbered
 # automatically in the order listed) and a link in the "On this page"
 # bar.
 #   id:       anchor id — must be unique, no spaces
@@ -19,7 +19,7 @@
 back_url: "/get-involved/"
 eyebrow: "Taking part"                                              # DRAFT
 title: "How we make sure that you have a good experience"            # DRAFT
-lede: "What you can expect from us when you take part: how the group works together, how we show what your input changed, and how data is protected."   # DRAFT
+lede: "What you can expect from us when you take part: how the group works together and how we show what your input changed."   # DRAFT
 jump_label: "On this page"
 
 groups:
@@ -67,18 +67,6 @@ groups:
           entirely up to you whether you complete it, and whether you share it with the whole group
           at the follow-up meeting, just with your facilitator, or keep it private — there's no
           expectation either way.
-
-  - id: "ge-data"
-    heading: "Data &amp; privacy"
-    items:
-      - question: "Will researchers be able to see my personal data directly?"
-        answer: >
-          No. Researchers using the Open Psychiatry Project resources will never see or download
-          individual-level data. Instead, a researcher submits a question they want answered, which is
-          run automatically by secure software, either a data container or privacy-preserving federation
-          software (Bitfount), at the location where the data is already stored. Only an anonymised
-          summary result will be sent back to the researcher; the underlying data itself will never leave
-          its secure environment and will never be viewed by anyone running the analysis.
 
 next_label: "Next steps"            # screen-reader name of the closing section
 next_register_lead: "Ready to take part?"

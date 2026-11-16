@@ -20,9 +20,9 @@ Each YAML file has a comment block at the top explaining its fields. Find the pa
 | Get involved — the FAQ questions and answers | `_data/faqs.yml` |
 | Get involved — the 3-project breakdown inside "What would I do?" | `_data/faq_projects.yml` |
 | Get involved — register card: "What it asks" steps and "How we look after it" points | `_data/get_involved.yml` |
-| Good experience (`/good-experience/`) — page copy and the six questions and answers | `_data/good_experience.yml` |
+| Good experience (`/good-experience/`) — page copy and the questions and answers | `_data/good_experience.yml` |
 | Team (`/team/`) — intro | `_data/team_page.yml` |
-| Team — Research team and Co-production team lists | `_data/team.yml` |
+| Team — Leadership team, Research team and software developers, and Co-production team lists | `_data/team.yml` |
 | Glossary (`/glossary/`) — header, search box, empty-state text | `_data/glossary_page.yml` |
 | Glossary — the terms themselves | `_data/glossary.yml` |
 | For Industry (`/industry/`) | `_data/industry.yml` |

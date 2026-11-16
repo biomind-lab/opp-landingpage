@@ -476,7 +476,32 @@ html:not(.no-js):not(.no-io) .gi-tasks {
     max-width: 860px;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1.5rem;
+  }
+
+  // Prominent pointer to /good-experience/ — a card, not a line of small print.
+  .gi-more {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    padding: 1.5rem 1.75rem;
+    background: $white;
+    border: 1px solid rgba($dark, 0.09);
+    border-left: 4px solid $plum;
+    border-radius: 0 8px 8px 0;
+
+    p {
+      flex: 1 1 320px;
+      font-family: $serif;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      color: $plum;
+      text-wrap: pretty;
+    }
+
+    .btn { flex-shrink: 0; text-decoration: none; }
   }
 
   p {
@@ -486,7 +511,7 @@ html:not(.no-js):not(.no-io) .gi-tasks {
     color: $gi-text-soft;
   }
 
-  a {
+  a:not(.btn) {
     color: $plum;
     font-weight: 600;
     &:hover { text-decoration: underline; }
