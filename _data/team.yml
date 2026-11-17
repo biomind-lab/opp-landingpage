@@ -60,9 +60,42 @@ leadership:
 research:
   heading: "Research team and software developers"
   intro: ""
-  # No one listed yet — the page shows four empty placeholder cards
-  # until people are added here (same shape as leadership.people).
-  people: []
+  # Open Targets members. Portraits are from https://opentargets.org/people
+  people:
+    - name: David Ochoa
+      title: Open Targets Platform Coordinator
+      role: "Open Targets"
+      photo: david-ochoa.png
+
+    - name: Carlos Cruz
+      title: Open Targets Frontend team lead
+      role: "Open Targets"
+      photo: carlos-cruz.png
+
+    - name: Yakov Tsepilov
+      title: Genetic Analysis Team Leader
+      role: "Open Targets"
+      photo: yakov-tsepilov.png
+
+    - name: Tobi Alegbe
+      title: Single-cell data scientist
+      role: "I ingest, harmonise and analyse multi-omic data for Open Targets"
+      photo: tobi-alegbe.png
+
+    - name: Xiangyu (Jack) Ge
+      title: Statistical Geneticist
+      role: "Open Targets"
+      photo: xiangyu-jack-ge.png
+
+    - name: David Oluwasusi
+      title: Software engineer
+      role: "Open Targets"
+      photo: david-oluwasusi.png
+
+    - name: Paris Litterick
+      title: Senior Administrator
+      role: "Open Targets"
+      photo: paris-litterick.png
 
 coproduction:
   heading: "Co-production team"
