@@ -60,22 +60,24 @@ leadership:
 research:
   heading: "Research team and software developers"
   intro: ""
-  # Open Targets members. Portraits are from https://opentargets.org/people
+  # Portraits of Open Targets members are from
+  # https://opentargets.org/people unless supplied directly.
   people:
-    - name: David Ochoa
-      title: Open Targets Platform Coordinator
-      role: "Open Targets"
-      photo: david-ochoa.png
-
-    - name: Carlos Cruz
-      title: Open Targets Frontend team lead
-      role: "Open Targets"
-      photo: carlos-cruz.png
+    # TODO: surname, job title and portrait still needed
+    - name: Arash
+      title: ""
+      role: "University of Cambridge, Department of Psychiatry"
+      photo: ""
 
     - name: Yakov Tsepilov
       title: Genetic Analysis Team Leader
       role: "Open Targets"
       photo: yakov-tsepilov.png
+
+    - name: David Ochoa
+      title: Open Targets Platform Coordinator
+      role: "Open Targets"
+      photo: david-ochoa.png
 
     - name: Tobi Alegbe
       title: Single-cell data scientist
@@ -87,6 +89,11 @@ research:
       role: "Open Targets"
       photo: xiangyu-jack-ge.png
 
+    - name: Carlos Cruz
+      title: Open Targets Frontend team lead
+      role: "Open Targets"
+      photo: carlos-cruz.png
+
     - name: David Oluwasusi
       title: Software engineer
       role: "Open Targets"
@@ -96,6 +103,12 @@ research:
       title: Backend developer
       role: "I work on Open Targets platform"
       photo: viktorija-leimane.jpg
+
+    # TODO: job title and portrait still needed
+    - name: Ivan Andrushevich Petukhov
+      title: ""
+      role: "Open Targets"
+      photo: ""
 
     - name: Paris Litterick
       title: Senior Administrator
