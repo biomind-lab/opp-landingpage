@@ -61,14 +61,9 @@ research:
   heading: "Research team and software developers"
   intro: ""
   # Portraits of Open Targets members are from
-  # https://opentargets.org/people unless supplied directly.
+  # https://opentargets.org/people unless supplied directly; Arash's and
+  # Ed's are from https://www.biomindlab.co.uk/members/.
   people:
-    # TODO: surname, job title and portrait still needed
-    - name: Arash
-      title: ""
-      role: "University of Cambridge, Department of Psychiatry"
-      photo: ""
-
     - name: Yakov Tsepilov
       title: Genetic Analysis Team Leader
       role: "Open Targets"
@@ -78,6 +73,11 @@ research:
       title: Open Targets Platform Coordinator
       role: "Open Targets"
       photo: david-ochoa.png
+
+    - name: Arash Yaghoobi
+      title: Research Assistant and PhD student
+      role: "University of Cambridge"
+      photo: arash-yaghoobi.jpg
 
     - name: Tobi Alegbe
       title: Single-cell data scientist
@@ -109,6 +109,11 @@ research:
       title: ""
       role: "Open Targets"
       photo: ""
+
+    - name: Ed Hutchings
+      title: PhD student
+      role: "University of Cambridge"
+      photo: ed-hutchings.jpg
 
     - name: Paris Litterick
       title: Senior Administrator
