@@ -1,37 +1,146 @@
-# Team members, in display order.
-# `photo` is the filename inside assets/images/team/. Leave blank to render
-# the "portrait needed" placeholder instead of a broken image.
-- name: Mary-Ellen Lynall
-  title: Principal lead
-  role: University of Cambridge, Department of Psychiatry
-  photo: mary-ellen-lynall.jpg
+# ===================================================================
+# Team members, in display order, in three named groups rendered by one
+# Liquid loop in team.html:
+#
+#   leadership    — the leadership team (university / partner leads)
+#   research      — the research team and software developers
+#   coproduction  — the co-production team (people with lived experience)
+#
+# Each group has a `heading`, optional `intro`/`subheading`/`paragraphs`
+# copy, and a `people` list. `photo` is the filename inside
+# assets/images/team/ — save new portraits as WebP, about 640px on the
+# short side (e.g. `cwebp -q 80 -resize 640 0 in.jpg -o name.webp`). Leave `photo` blank to render the "portrait
+# needed" placeholder instead of a broken image (label text lives in
+# _data/team_page.yml as `placeholder_label`).
+#
+# If a group's `people` list is empty, the page renders four empty
+# placeholder cards so the section still reads as a grid. Add the
+# co-production core group under `coproduction.people` once recruited,
+# using the same shape as `leadership.people`.
+# ===================================================================
 
-- name: Rudolf Cardinal
-  title: Co-lead
-  role: Non-executive director, CPFT; co-investigator for DATAMIND
-  photo: rudolf-cardinal.png
+leadership:
+  heading: "Leadership team"
+  intro: ""
+  people:
+    - name: Mary-Ellen Lynall
+      title: Principal lead
+      role: University of Cambridge, Department of Psychiatry
+      photo: mary-ellen-lynall.webp
 
-- name: Ellen McDonagh
-  title: Co-lead
-  role: Translational Informatics Director of Open Targets
-  photo: ellen-mcdonagh.png
+    - name: Rudolf Cardinal
+      title: Co-lead
+      role: Non-executive director, CPFT; co-investigator for DATAMIND
+      photo: rudolf-cardinal.webp
 
-- name: Andrew McIntosh
-  title: Co-lead
-  role: Director of the UKRI Mental Health Platform; Chief Scientist of DATAMIND
-  photo: andrew-mcIntosh.jpg
+    - name: Ellen McDonagh
+      title: Co-lead
+      role: Translational Informatics Director of Open Targets
+      photo: ellen-mcdonagh.webp
 
-- name: Ann John
-  title: Co-lead
-  role: Co-Director of DATAMIND
-  photo: ann-john.jpeg
+    - name: Andrew McIntosh
+      title: Co-lead
+      role: Director of the UKRI Mental Health Platform; Chief Scientist of DATAMIND
+      photo: andrew-mcintosh.webp
 
-- name: Robin Flaig
-  title: Co-lead
-  role: Co-Director, UK Longitudinal Linkage Collaboration; COO, Generation Scotland
-  photo: robin-flaig.png
+    - name: Ann John
+      title: Co-lead
+      role: Co-Director of DATAMIND
+      photo: ann-john.webp
 
-- name: Birgitta Olofsson
-  title: Programme manager
-  role: University of Cambridge, Department of Psychiatry
-  photo: birgitta-olofsson.jpeg
+    - name: Robin Flaig
+      title: Co-lead
+      role: Co-Director, UK Longitudinal Linkage Collaboration; COO, Generation Scotland
+      photo: robin-flaig.webp
+
+    - name: Birgitta Olofsson
+      title: Programme manager
+      role: University of Cambridge, Department of Psychiatry
+      photo: birgitta-olofsson.webp
+
+research:
+  heading: "Research team and software developers"
+  intro: ""
+  # Portraits of Open Targets members are from
+  # https://opentargets.org/people unless supplied directly.
+  # Listed alphabetically by surname.
+  people:
+    - name: Tobi Alegbe
+      title: Single-cell data scientist
+      role: "I ingest, harmonise and analyse multi-omic data for Open Targets"
+      photo: tobi-alegbe.webp
+
+    - name: Ivan Andrushevich Petukhov
+      title: Genetics Team Intern
+      role: "Open Targets. PhD Student in Psychiatric Genetics, King’s College London."
+      photo: ivan-andrushevich-petukhov.webp
+
+    - name: Carlos Cruz
+      title: Open Targets Frontend team lead
+      role: "Open Targets"
+      photo: carlos-cruz.webp
+
+    - name: Xiangyu (Jack) Ge
+      title: Statistical Geneticist
+      role: "Open Targets"
+      photo: xiangyu-jack-ge.webp
+
+    - name: Ed Hutchings
+      title: MB PhD student
+      role: "University of Cambridge. I map neuropsychiatric disorders to brain regions."
+      photo: ed-hutchings.webp
+
+    - name: Viktorija Leimane
+      title: Backend developer
+      role: "I work on Open Targets platform"
+      photo: viktorija-leimane.webp
+
+    - name: Paris Litterick
+      title: Senior Administrator
+      role: "Open Targets"
+      photo: paris-litterick.webp
+
+    - name: David Ochoa
+      title: Open Targets Platform Coordinator
+      role: "Open Targets"
+      photo: david-ochoa.webp
+
+    - name: David Oluwasusi
+      title: Software engineer
+      role: "Open Targets"
+      photo: david-oluwasusi.webp
+
+    - name: Yakov Tsepilov
+      title: Genetic Analysis Team Lead
+      role: "Yakov leads the Genetic Analysis team at Open Targets, which generates the platform’s GWAS evidence and Locus-to-Gene (L2G) scores to help identify and prioritise drug targets."
+      photo: yakov-tsepilov.webp
+
+    - name: Arash Yaghoobi
+      title: Research Assistant and PhD student
+      role: "University of Cambridge. I focus on evaluating, benchmarking, and improving gene prioritisation within the Open Targets platform for psychiatric disorders."
+      photo: arash-yaghoobi.webp
+
+coproduction:
+  heading: "Co-production team"
+  subheading: "People with lived experience"
+  paragraphs:
+    - "People with lived experience of mental health challenges sit in the core team, shaping the questions OBAM asks, how data is governed, and how findings are shared."
+    - "We aim to bring together 12–16 people with lived experience across our workshop series, to complement the core group who will stay involved throughout."
+  # The "Core member" entries are placeholder slots until the core
+  # group is recruited. Replace each with a real person (same shape as
+  # leadership.people, add `photo:`).
+  people:
+    - name: Naomi Clements-Brod
+      title: Patient and Public Involvement Research Lead
+      role: ""
+      photo: naomi-clements-brod.webp
+
+    - name: Core member
+      title: Lived experience
+      role: Joins throughout the workshop series
+      photo: ""
+
+    - name: Core member
+      title: Lived experience
+      role: Joins throughout the workshop series
+      photo: ""

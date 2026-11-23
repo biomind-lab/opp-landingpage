@@ -10,9 +10,9 @@
   <title>{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  {%- comment -%} Fonts are self-hosted (see _sass/_fonts.scss). Preload the two files every page needs so text paints in the right font first time. {%- endcomment %}
+  <link rel="preload" href="{{ '/assets/fonts/inter-normal-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/libre-baskerville-normal-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 

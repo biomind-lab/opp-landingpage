@@ -1,10 +1,11 @@
-title: Open Psychiatry Project
+title: Open Brain &amp; Mind
 description: "Open science for mental health — connecting molecular data with real-world impact."
-url: "https://carcruz.github.io"
+url: "https://lynalllab.github.io"
 baseurl: "/opp-landingpage"
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 sass:
   style: compressed
@@ -16,3 +17,6 @@ exclude:
   - CLAUDE.md
   - .gitignore
   - vendor/
+  # Working documents kept in the repo for reference — not part of the site
+  - "Final draft interest form (1).csv"
+  - "Team OPP website-2.xlsx"

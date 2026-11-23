@@ -11,7 +11,7 @@
 # ===================================================================
 
 title: "Accessibility"
-intro: "This statement covers the Open Psychiatry Project website. It explains how accessible the site is, what we know is not working, and how to tell us when something gets in your way."
+intro: "This statement covers the Open Brain &amp;&nbsp;Mind website. It explains how accessible the site is, what we know is not working, and how to tell us when something gets in your way."
 
 aim_heading: "What we aim for"
 aim_paragraphs:
@@ -36,7 +36,7 @@ sections:
 
   - title: "Technical information about this website's accessibility"
     paragraphs:
-      - "The Open Psychiatry Project is committed to making its website accessible in line with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018."
+      - "The Open Brain &amp;&nbsp;Mind is committed to making its website accessible in line with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018."
       - "Compliance status: assessed against WCAG 2.2 AA."
 
 
@@ -46,7 +46,7 @@ sections:
 
   - title: "If you have issues with accessibility, please contact us directly."
     links:
-      - label: "Open Psychiatry Project"
+      - label: "Open Brain &amp;&nbsp;Mind"
         url: "mailto:openpsychiatryproject@medschl.cam.ac.uk"
 
 prepared_date: "4 September 2026"
