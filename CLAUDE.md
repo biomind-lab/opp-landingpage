@@ -65,6 +65,13 @@ Sections alternate between `$white` and `$off-white` backgrounds. Transitions us
 
 All brand colors are defined as both CSS custom properties (`:root`) and SCSS variables at the top of `main.scss`. The SCSS variables are used throughout for calculations; the CSS custom properties are available for any vanilla CSS or JS that needs them.
 
+### Performance conventions
+
+- **Fonts are self-hosted** in `assets/fonts/` (Inter + Libre Baskerville variable woff2), declared in `_sass/_fonts.scss` and preloaded in `_includes/head.html`. No request goes to Google Fonts. `$sans`/`$serif` include metric-matched `'… Fallback'` families so text does not shift when the web font loads.
+- **Team portraits are WebP**, short side capped at 640px (`cwebp -q 80`), in `assets/images/team/`. The first row of the first group loads eagerly; the rest are lazy.
+- The nav logo is `assets/images/logo/opp-mark-120.webp` (60px box at 2x). The get-involved watercolour has a 720px copy served to phones via `srcset` (`hero_image.file_small` in `_data/get_involved_page.yml`).
+- `_layouts/default.html` only loads `hero-canvas.js`, `stat-counters.js` and `nav-scrollspy.js` on the home page, and `scrollspy.js` on home and `/more/`.
+
 ### Deployment
 
 Uses the `github-pages` gem to match GitHub Pages' build environment exactly. Push to `main` — GitHub Pages builds and deploys automatically.

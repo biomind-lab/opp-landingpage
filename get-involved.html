@@ -41,7 +41,7 @@ description: "How people with lived experience of mental health challenges, and 
       </div>
     </div>
     {% if gi.hero_image.file != "" %}
-    <img class="gi-hero-img" src="{{ '/assets/images/' | append: gi.hero_image.file | relative_url }}" alt="{{ gi.hero_image.alt }}"{% if gi.hero_image.width %} width="{{ gi.hero_image.width }}" height="{{ gi.hero_image.height }}"{% endif %}>
+    <img class="gi-hero-img" src="{{ '/assets/images/' | append: gi.hero_image.file | relative_url }}"{% if gi.hero_image.file_small %} srcset="{{ '/assets/images/' | append: gi.hero_image.file_small | relative_url }} {{ gi.hero_image.width_small }}w, {{ '/assets/images/' | append: gi.hero_image.file | relative_url }} {{ gi.hero_image.width }}w" sizes="(max-width: 760px) min(calc(100vw - 48px), 520px), min(calc(50vw - 52px), 498px)"{% endif %} decoding="async" alt="{{ gi.hero_image.alt }}"{% if gi.hero_image.width %} width="{{ gi.hero_image.width }}" height="{{ gi.hero_image.height }}"{% endif %}>
     {% endif %}
   </div>
 </section>

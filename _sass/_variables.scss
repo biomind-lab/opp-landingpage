@@ -26,8 +26,9 @@ $off-white: #f7f5f9;
 $lilac:     #f1eaf6;
 $dark:      #1a1220;
 
-$serif: 'Libre Baskerville', serif;
-$sans:  'Inter', sans-serif;
+// The '… Fallback' families are metric-matched system fonts — see _fonts.scss.
+$serif: 'Libre Baskerville', 'Libre Baskerville Fallback', serif;
+$sans:  'Inter', 'Inter Fallback', sans-serif;
 
 // Contrast-driven text tones — see _register.scss / _modal.scss.
 $muted:     #6b6478;   // supporting text. NOT #8d859c — that measures 3.25:1 on

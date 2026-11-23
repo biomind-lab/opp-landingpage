@@ -22,6 +22,10 @@ hero:
 # is rendered. Write a short descriptive `alt` when the image changes.
 hero_image:
   file: "get-involved-watercolour.webp"
+  # Smaller copy served to phones (optional). If the image changes,
+  # regenerate it at `width_small` pixels wide or delete these two lines.
+  file_small: "get-involved-watercolour-720.webp"
+  width_small: 720
   width: 1439      # intrinsic pixel size — lets the browser reserve space before the image loads
   height: 1176
   alt: "Watercolour illustration of seven people of different ages and backgrounds working together around a table with laptops, charts and checklists, under a board titled Open Psychiatry Project."

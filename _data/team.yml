@@ -8,7 +8,8 @@
 #
 # Each group has a `heading`, optional `intro`/`subheading`/`paragraphs`
 # copy, and a `people` list. `photo` is the filename inside
-# assets/images/team/. Leave `photo` blank to render the "portrait
+# assets/images/team/ — save new portraits as WebP, about 640px on the
+# short side (e.g. `cwebp -q 80 -resize 640 0 in.jpg -o name.webp`). Leave `photo` blank to render the "portrait
 # needed" placeholder instead of a broken image (label text lives in
 # _data/team_page.yml as `placeholder_label`).
 #
@@ -25,100 +26,99 @@ leadership:
     - name: Mary-Ellen Lynall
       title: Principal lead
       role: University of Cambridge, Department of Psychiatry
-      photo: mary-ellen-lynall.jpg
+      photo: mary-ellen-lynall.webp
 
     - name: Rudolf Cardinal
       title: Co-lead
       role: Non-executive director, CPFT; co-investigator for DATAMIND
-      photo: rudolf-cardinal.png
+      photo: rudolf-cardinal.webp
 
     - name: Ellen McDonagh
       title: Co-lead
       role: Translational Informatics Director of Open Targets
-      photo: ellen-mcdonagh.png
+      photo: ellen-mcdonagh.webp
 
     - name: Andrew McIntosh
       title: Co-lead
       role: Director of the UKRI Mental Health Platform; Chief Scientist of DATAMIND
-      photo: andrew-mcIntosh.jpg
+      photo: andrew-mcintosh.webp
 
     - name: Ann John
       title: Co-lead
       role: Co-Director of DATAMIND
-      photo: ann-john.jpeg
+      photo: ann-john.webp
 
     - name: Robin Flaig
       title: Co-lead
       role: Co-Director, UK Longitudinal Linkage Collaboration; COO, Generation Scotland
-      photo: robin-flaig.png
+      photo: robin-flaig.webp
 
     - name: Birgitta Olofsson
       title: Programme manager
       role: University of Cambridge, Department of Psychiatry
-      photo: birgitta-olofsson.jpeg
+      photo: birgitta-olofsson.webp
 
 research:
   heading: "Research team and software developers"
   intro: ""
   # Portraits of Open Targets members are from
-  # https://opentargets.org/people unless supplied directly; Arash's and
-  # Ed's are from https://www.biomindlab.co.uk/members/.
+  # https://opentargets.org/people unless supplied directly.
+  # Listed alphabetically by surname.
   people:
-    - name: Yakov Tsepilov
-      title: Genetic Analysis Team Leader
-      role: "Open Targets"
-      photo: yakov-tsepilov.png
-
-    - name: David Ochoa
-      title: Open Targets Platform Coordinator
-      role: "Open Targets"
-      photo: david-ochoa.png
-
-    - name: Arash Yaghoobi
-      title: Research Assistant and PhD student
-      role: "University of Cambridge"
-      photo: arash-yaghoobi.jpg
-
     - name: Tobi Alegbe
       title: Single-cell data scientist
       role: "I ingest, harmonise and analyse multi-omic data for Open Targets"
-      photo: tobi-alegbe.png
+      photo: tobi-alegbe.webp
 
-    - name: Xiangyu (Jack) Ge
-      title: Statistical Geneticist
-      role: "Open Targets"
-      photo: xiangyu-jack-ge.png
+    - name: Ivan Andrushevich Petukhov
+      title: Genetics Team Intern
+      role: "Open Targets. PhD Student in Psychiatric Genetics, King’s College London."
+      photo: ivan-andrushevich-petukhov.webp
 
     - name: Carlos Cruz
       title: Open Targets Frontend team lead
       role: "Open Targets"
-      photo: carlos-cruz.png
+      photo: carlos-cruz.webp
 
-    - name: David Oluwasusi
-      title: Software engineer
+    - name: Xiangyu (Jack) Ge
+      title: Statistical Geneticist
       role: "Open Targets"
-      photo: david-oluwasusi.png
+      photo: xiangyu-jack-ge.webp
+
+    - name: Ed Hutchings
+      title: MB PhD student
+      role: "University of Cambridge. At OPP I work on mapping neuropsychiatric disorders to parts of the brain using genetic approaches, with the goal of informing mechanistic understanding of these disorders and prioritising localised targets for neuromodulatory therapies."
+      photo: ed-hutchings.webp
 
     - name: Viktorija Leimane
       title: Backend developer
       role: "I work on Open Targets platform"
-      photo: viktorija-leimane.jpg
-
-    # TODO: job title and portrait still needed
-    - name: Ivan Andrushevich Petukhov
-      title: ""
-      role: "Open Targets"
-      photo: ""
-
-    - name: Ed Hutchings
-      title: PhD student
-      role: "University of Cambridge"
-      photo: ed-hutchings.jpg
+      photo: viktorija-leimane.webp
 
     - name: Paris Litterick
       title: Senior Administrator
       role: "Open Targets"
-      photo: paris-litterick.png
+      photo: paris-litterick.webp
+
+    - name: David Ochoa
+      title: Open Targets Platform Coordinator
+      role: "Open Targets"
+      photo: david-ochoa.webp
+
+    - name: David Oluwasusi
+      title: Software engineer
+      role: "Open Targets"
+      photo: david-oluwasusi.webp
+
+    - name: Yakov Tsepilov
+      title: Genetic Analysis Team Lead
+      role: "Yakov leads the Genetic Analysis team at Open Targets, which generates the platform’s GWAS evidence and Locus-to-Gene (L2G) scores to help identify and prioritise drug targets."
+      photo: yakov-tsepilov.webp
+
+    - name: Arash Yaghoobi
+      title: Research Assistant and PhD student
+      role: "University of Cambridge. I focus on evaluating, benchmarking, and improving gene prioritisation within the Open Targets platform for psychiatric disorders."
+      photo: arash-yaghoobi.webp
 
 coproduction:
   heading: "Co-production team"
@@ -133,7 +133,7 @@ coproduction:
     - name: Naomi Clements-Brod
       title: Patient and Public Involvement Research Lead
       role: ""
-      photo: naomi-clements-brod.jpg
+      photo: naomi-clements-brod.webp
 
     - name: Core member
       title: Lived experience

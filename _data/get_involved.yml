@@ -9,10 +9,10 @@
 preview:
   steps_label: "What it asks"
   steps:
-    - "Your name, email and where you are"
-    - "A little about you"
-    - "Why you want to contribute &mdash; three short questions"
+    - "Your name and email"
+    - "Why you would like to contribute &mdash; three short questions"
     - "Which tasks interest you"
+    - "A little about you and where you are"
     - "Allow us to collect your data and contact you"
   trust_label: "How we look after it"
   trust_points:

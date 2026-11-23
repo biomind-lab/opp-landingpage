@@ -36,10 +36,12 @@ description: "The team behind the Open Psychiatry Project."
     <div class="team-grid">
       {% if group.people.size > 0 %}
         {% for person in group.people %}
+        {%- comment -%} First row of the first group is above the fold: load it eagerly, lazy-load the rest. {%- endcomment -%}
+        {% assign eager_row = false %}{% if forloop.parentloop.first and forloop.index <= 4 %}{% assign eager_row = true %}{% endif %}
         <article class="team-card">
           {% if person.photo and person.photo != "" %}
             <div class="team-photo">
-              <img src="{{ '/assets/images/team/' | append: person.photo | relative_url }}" alt="{{ person.name }}" loading="lazy" width="400" height="400">
+              <img src="{{ '/assets/images/team/' | append: person.photo | relative_url }}" alt="{{ person.name }}"{% if eager_row %}{% if forloop.first %} fetchpriority="high"{% endif %}{% else %} loading="lazy"{% endif %} decoding="async" width="400" height="400">
             </div>
           {% else %}
             <div class="team-photo team-photo--empty" aria-hidden="true">{{ site.data.team_page.placeholder_label }}</div>
