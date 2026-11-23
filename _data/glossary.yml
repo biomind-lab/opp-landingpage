@@ -20,7 +20,7 @@
   see_also: "Omics"
 
 - term: "Bitfount"
-  definition: "The federated analysis software OPP uses to run research queries inside secure data environments. It lets a researcher's question travel to the data instead of the data travelling to the researcher."
+  definition: "The federated analysis software OBAM uses to run research queries inside secure data environments. It lets a researcher's question travel to the data instead of the data travelling to the researcher."
   see_also: "Federated analysis"
 
 # DRAFT — needs review
@@ -29,7 +29,7 @@
   see_also: "DATAMIND"
 
 - term: "Co-production"
-  definition: "Designing research and tools together with the people they're meant to serve, rather than for them. On OPP this means people with lived experience of mental health challenges help shape what gets built and how, from the start."
+  definition: "Designing research and tools together with the people they're meant to serve, rather than for them. On OBAM this means people with lived experience of mental health challenges help shape what gets built and how, from the start."
   see_also: "People with Lived Experience (PWLE)"
 
 - term: "Container"
@@ -41,7 +41,7 @@
   see_also: "Container"
 
 - term: "Data Access Committee"
-  definition: "The independent group that reviews and approves requests to run analyses through FedOMICS. OPP has two layers of this oversight: a project-wide committee plus each data custodian's own committee."
+  definition: "The independent group that reviews and approves requests to run analyses through FedOMICS. OBAM has two layers of this oversight: a project-wide committee plus each data custodian's own committee."
   see_also: "Data custodian"
 
 - term: "Data custodian"
@@ -54,7 +54,7 @@
 
 # DRAFT — needs review
 - term: "DATAMIND"
-  definition: "The UK's national data hub for mental health research, part of Health Data Research UK and the UKRI Mental Health Platform. It makes mental health datasets easier to find, access and use, and provides data infrastructure that OPP builds on."
+  definition: "The UK's national data hub for mental health research, part of Health Data Research UK and the UKRI Mental Health Platform. It makes mental health datasets easier to find, access and use, and provides data infrastructure that OBAM builds on."
   see_also: "UK LLC TRE"
 
 - term: "Drug repurposing"
@@ -71,11 +71,11 @@
 
 # DRAFT — needs review
 - term: "EMBL-EBI"
-  definition: "The European Bioinformatics Institute, part of the European Molecular Biology Laboratory, based near Cambridge. It is home to the Open Targets Platform and a lead partner on OPP, bringing expertise in curating and sharing large-scale biological data."
+  definition: "The European Bioinformatics Institute, part of the European Molecular Biology Laboratory, based near Cambridge. It is home to the Open Targets Platform and a lead partner on OBAM, bringing expertise in curating and sharing large-scale biological data."
   see_also: "Open Targets Platform"
 
 - term: "FedOMICS"
-  definition: "OPP's privacy-preserving data federation network, initially linking the Generation Scotland cohort and the Early Intervention Mission/ImmunoMind psychosis cohort using Bitfount's technology."
+  definition: "OBAM's privacy-preserving data federation network, initially linking the Generation Scotland cohort and the Early Intervention Mission/ImmunoMind psychosis cohort using Bitfount's technology."
   see_also: "Federated analysis"
 
 - term: "Federated analysis"
@@ -104,21 +104,26 @@
   definition: "The large-scale study of metabolites — the small molecules produced when the body breaks down food, drugs, and its own tissues. Changes in these molecules can signal how a condition is developing."
   see_also: "Omics"
 
+# DRAFT — needs review
+- term: "OBAM"
+  definition: "Open Brain &amp;&nbsp;Mind: the project behind this website. It is building the UK&rsquo;s first open, publicly accessible resource for exploring how genes, cells and molecules influence mental health conditions, linking existing datasets safely so researchers, health professionals and the public can explore them in one place."
+  see_also: "Open Targets Platform"
+
 - term: "Omics"
-  definition: "An umbrella term for technologies that study a biological system at scale — genomics (genes), proteomics (proteins), and metabolomics (metabolites) among them. OPP integrates omics data to improve understanding of mental health conditions."
+  definition: "An umbrella term for technologies that study a biological system at scale — genomics (genes), proteomics (proteins), and metabolomics (metabolites) among them. OBAM integrates omics data to improve understanding of mental health conditions."
   see_also: "Proteomics"
 
 - term: "Open Targets Platform"
-  definition: "An internationally used, open-source platform for drug target discovery, built by EMBL-EBI and industry partners. OPP extends it with mental-health-relevant molecular data."
+  definition: "An internationally used, open-source platform for drug target discovery, built by EMBL-EBI and industry partners. OBAM extends it with mental-health-relevant molecular data."
   see_also: "Drug target"
 
 - term: "People with Lived Experience (PWLE)"
-  definition: "People who have personally experienced a mental health condition, or who care for someone who has. PWLE co-design OPP's resource and research questions alongside researchers and Health professionals."
+  definition: "People who have personally experienced a mental health condition, or who care for someone who has. PWLE co-design OBAM's resource and research questions alongside researchers and Health professionals."
   see_also: "Co-production"
 
 # DRAFT — needs review
 - term: "PGC"
-  definition: "Psychiatric Genomics Consortium: an international collaboration of researchers pooling genetic data from hundreds of thousands of participants to identify genetic variants linked to psychiatric conditions. Many of the GWAS results OPP draws on come from the PGC."
+  definition: "Psychiatric Genomics Consortium: an international collaboration of researchers pooling genetic data from hundreds of thousands of participants to identify genetic variants linked to psychiatric conditions. Many of the GWAS results OBAM draws on come from the PGC."
   see_also: "GWAS"
 
 - term: "Proteomics"
@@ -127,7 +132,7 @@
 
 # DRAFT — needs review
 - term: "R&D"
-  definition: "Research and development: the work companies and institutions do to discover, test and bring new treatments or diagnostics into use. Industry R&D partners can use the OPP resource to identify and validate drug targets."
+  definition: "Research and development: the work companies and institutions do to discover, test and bring new treatments or diagnostics into use. Industry R&D partners can use the OBAM resource to identify and validate drug targets."
   see_also: "Drug target"
 
 - term: "Real-world data"

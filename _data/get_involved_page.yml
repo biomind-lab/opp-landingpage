@@ -36,7 +36,7 @@ pitch:
   problem: "Mental health data in the UK is fragmented across many separate resources and secure environments. That makes it hard to connect what we know about genes, cells and molecules with what happens to real people, and it slows down the search for better treatments."
   solution_label: "Our solution"
   # DRAFT — needs review (feedback doc copy not available at time of writing)
-  solution: "The Open Psychiatry Project is building an open, publicly accessible resource that links these datasets safely, so researchers, health professionals and the public can explore the biology of mental health in one place. We want to build it with the people it is meant to serve."
+  solution: "The Open Brain &amp;&nbsp;Mind is building an open, publicly accessible resource that links these datasets safely, so researchers, health professionals and the public can explore the biology of mental health in one place. We want to build it with the people it is meant to serve."
 
 # Recruitment ask, under the hero. First paragraph is the lede.
 ask:

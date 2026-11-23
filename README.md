@@ -1,6 +1,6 @@
-# Open Psychiatry Project — Website
+# Open Brain & Mind — Website
 
-Jekyll site for the Open Psychiatry Project, deployed via GitHub Pages.
+Jekyll site for the Open Brain & Mind, deployed via GitHub Pages.
 
 ---
 

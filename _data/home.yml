@@ -9,7 +9,7 @@
 
 hero:
   badge: "UKRI MRC &amp; NIHR Funded"
-  heading: "Open Psychiatry Project"
+  heading: "Open Brain &amp;&nbsp;Mind"
   tagline: "Open science for mental health &mdash; connecting molecular data with real-world impact."
   learn_more_cta: "Learn more"
   stats:
@@ -25,8 +25,8 @@ hero:
   funding_line: "<strong>Funded by</strong> UKRI&rsquo;s Medical Research Council (MRC) and the National Institute for Health and Care Research (NIHR)"
 
 about:
-  heading: "What is the Open Psychiatry Project?"
-  lead: "The Open Psychiatry Project is a &pound;2.3M initiative building the UK&rsquo;s first open, publicly accessible resource for exploring how genes, cells, and molecules influence mental health conditions."
+  heading: "What is the Open Brain &amp;&nbsp;Mind?"
+  lead: "The Open Brain &amp;&nbsp;Mind is a &pound;2.3M initiative building the UK&rsquo;s first open, publicly accessible resource for exploring how genes, cells, and molecules influence mental health conditions."
   paragraphs:
     - "Led by Dr Mary-Ellen Lynall at the University of Cambridge in partnership with Dr Ellen McDonagh at EMBL-EBI, the project extends the globally used Open Targets resource &mdash; a major hub for drug and target discovery &mdash; to integrate a wide range of mental-health&ndash;relevant molecular datasets."
     - "The project also involves establishing links between existing UK mental health patient cohorts, to enable a safe, federated data analysis framework to unify these valuable resources and glean new insights into the biology of mental health using real world data. This will ultimately feed into enhancing the Open Targets resource to provide evidence of potential biomarkers, drug targets, and treatments for mental health conditions."
