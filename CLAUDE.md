@@ -72,6 +72,14 @@ All brand colors are defined as both CSS custom properties (`:root`) and SCSS va
 - The nav logo is `assets/images/logo/opp-mark-120.webp` (60px box at 2x). The get-involved watercolour has a 720px copy served to phones via `srcset` (`hero_image.file_small` in `_data/get_involved_page.yml`).
 - `_layouts/default.html` only loads `hero-canvas.js`, `stat-counters.js` and `nav-scrollspy.js` on the home page, and `scrollspy.js` on home and `/more/`.
 
+### SEO and link previews
+
+- `_includes/head.html` writes the `<title>` itself; `{% seo title=false %}` (jekyll-seo-tag) supplies the description, canonical link, Open Graph / Twitter tags and JSON-LD. Do not add a manual `<meta name="description">`.
+- Page `title` / `description` front matter and `_config.yml`'s `title` use a plain `&` (the templates escape it). Only `_data/*.yml` copy uses `&amp;&nbsp;`.
+- The share card is `assets/images/social/og-card.jpg` (1200x630), set as the default `image` for every page in `_config.yml › defaults`. It contains the site name and tagline as pixels, so regenerate it if either changes.
+- `jekyll-sitemap` generates `sitemap.xml` and `robots.txt`. Pages that should stay out of search set `sitemap: false` and `robots: noindex` (see `thank-you.html`).
+- Favicons: `favicon.ico` and `apple-touch-icon.png` in the root, `assets/images/logo/icon-192.png` (also the structured-data `logo`).
+
 ### Deployment
 
 Uses the `github-pages` gem to match GitHub Pages' build environment exactly. Push to `main` — GitHub Pages builds and deploys automatically.
