@@ -1,11 +1,29 @@
-title: Open Brain &amp; Mind
+title: "Open Brain & Mind"
+tagline: "Open science for mental health"
 description: "Open science for mental health — connecting molecular data with real-world impact."
 url: "https://openbrainandmind.co.uk"
 baseurl: ""
+lang: en_GB
+
+# Search and link-preview settings (read by jekyll-seo-tag).
+# `logo` feeds the structured data; the default `image` below is the card
+# shown when any page is shared, unless that page sets its own `image`.
+logo: /assets/images/logo/icon-192.png
+theme_color: "#89457f"
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/social/og-card.jpg
+        width: 1200
+        height: 630
+        alt: "Open Brain & Mind: open science for mental health, connecting molecular data with real-world impact."
 
 plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 sass:
   style: compressed

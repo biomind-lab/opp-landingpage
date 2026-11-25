@@ -7,8 +7,13 @@
       document.documentElement.classList.add('no-io');
     }
   </script>
-  <title>{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
+  {%- comment -%} The title is written here; jekyll-seo-tag (below) supplies the description, canonical link, Open Graph / Twitter card and structured data. {%- endcomment %}
+  <title>{% if page.title and page.title != site.title %}{{ page.title | escape_once }} | {{ site.title | escape_once }}{% else %}{{ site.title | escape_once }} | {{ site.tagline | escape_once }}{% endif %}</title>
+  {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+  <meta name="theme-color" content="{{ site.theme_color }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.logo | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
 
   {%- comment -%} Fonts are self-hosted (see _sass/_fonts.scss). Preload the two files every page needs so text paints in the right font first time. {%- endcomment %}
   <link rel="preload" href="{{ '/assets/fonts/inter-normal-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
@@ -16,5 +21,5 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-  {% seo %}
+  {% seo title=false %}
 </head>
